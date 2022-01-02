@@ -17,8 +17,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@master
       env:
         ACCESS_TOEKN: ${{secrets.ACTION_TOKEN}}
-      # 在部署前要checkout的基本分支，默认是master
-      BASE_BRANCH: master # The branch the action should deploy from.
       # Vue CLI默认打包到 dist 目录
       FOLDER: dist # The folder the action should deploy.
       # 在向 BRANCH 分支推送代码前，可以指定构建脚本
